@@ -1,0 +1,9 @@
+word = "mississippi"
+freq = dict()
+for w in word:
+      if w in freq:
+             freq[w] += 1
+      else:
+             freq[w] = 1
+freq = sorted(freq.items(), key=lambda item: item[1], reverse = True)
+print(freq)
